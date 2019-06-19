@@ -3,7 +3,7 @@
 ```
 cmsrel CMSSW_10_2_0
 cd CMSSW_10_2_0/src
-git clone git@github.com:mmusich/PrivateMCProductions.git
+git clone git@github.com:cms-trackeralign/PrivateMCProductions.git
 cd PrivateMCProductions/TkAlMinBias/
 mkdir outfiles
 ./submitAllSeeds.sh
