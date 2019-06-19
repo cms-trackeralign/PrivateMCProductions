@@ -1,9 +1,9 @@
 universe              = vanilla
-arguments             = $(par1) $(par2) $(par3) $(par4)
-executable            = UndergroundCosmicSPLooseMu_cfi_GEN_SIM_DIGI_L1_DIGI2RAW_RAW2DIGI_L1Reco_RECO_ALCA_Templ.sh
-output                = $(par4)/outfiles/step1_UndergroundCosmicSPLooseMu_$(par2)_evts_seed_$(par1).out
-error                 = $(par4)/outfiles/step1_UndergroundCosmicSPLooseMu_$(par2)_evts_seed_$(par1).err
-log                   = $(par4)/outfiles/step1_UndergroundCosmicSPLooseMu_$(par2)_evts_seed_$(par1).log
+arguments             = $(par1) $(par2) $(par3) $(par4) $(par5)
+executable            = UndergroundCosmicSPLooseMu_cfi_py_GEN_SIM_DIGI_L1_DIGI2RAW_RAW2DIGI_L1Reco_RECO_ALCA_Templ.sh
+output                = $(par5)/outfiles/step1_UndergroundCosmicSPLooseMu_$(par2)_evts_seed_$(par1).out
+error                 = $(par5)/outfiles/step1_UndergroundCosmicSPLooseMu_$(par2)_evts_seed_$(par1).err
+log                   = $(par5)/outfiles/step1_UndergroundCosmicSPLooseMu_$(par2)_evts_seed_$(par1).log
 transfer_output_files = ""
 +JobFlavour = "workday" 
 queue
