@@ -97,7 +97,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag,options.GlobalTag, '')
 
 process.GlobalTag.toGet = cms.VPSet(
      cms.PSet(record = cms.string('BeamSpotObjectsRcd'),
-          tag = cms.string('BeamSpotObjects_Realistic25ns_13TeVCollisions_RoundOpticsHighSigmaZ_RunBased_v2_mc'),
+          tag = cms.string('BeamSpotObjects_Realistic25ns_13TeVCollisions_RoundOpticsLowSigmaZ_RunBased_v1_mc'),
           connect = cms.string("frontier://FrontierProd/CMS_CONDITIONS"),
           ),    
            cms.PSet(record = cms.string('SiPixelDynamicInefficiencyRcd'),

@@ -22,13 +22,9 @@ cmsRun ZMM_13TeV_TuneCUETP8M1_cfi_GEN_SIM_DIGI_L1_DIGI2RAW_RAW2DIGI_L1Reco_RECO_
 
 echo "Content of working directory is: " `ls -lrt`
 
-eos mkdir -p /eos/cms/store/group/alca_trackeralign/$USER/test_out/ZMuMuRun3MCProd/${year}/
+eos mkdir -p /eos/cms/store/group/alca_trackeralign/$USER/test_out/ZMuMuRun3MCProduction/${year}/
 
-for payloadOutput in $(ls *root ); do xrdcp -f $payloadOutput root://eoscms.cern.ch//eos/cms/store/group/alca_trackeralign/$USER/test_out/ZMuMuRun3MCProd/${year}/step1_ZMM_13TeV_TuneCUETP8M1_${globalTag}_${nEvts}_evts_seed_${mySeed}.root ; done
-
-mv ${JobName}.out ${CMSSW_DIR}/outfiles
-mv ${JobName}.err ${CMSSW_DIR}/outfiles
-mv ${JobName}.log ${CMSSW_DIR}/outfiles
+for payloadOutput in $(ls *root ); do xrdcp -f $payloadOutput root://eoscms.cern.ch//eos/cms/store/group/alca_trackeralign/$USER/test_out/ZMuMuRun3MCProduction/${year}/step1_ZMM_13TeV_TuneCUETP8M1_${globalTag}_${nEvts}_evts_seed_${mySeed}.root ; done
 
 echo  "Job ended at " `date`
 

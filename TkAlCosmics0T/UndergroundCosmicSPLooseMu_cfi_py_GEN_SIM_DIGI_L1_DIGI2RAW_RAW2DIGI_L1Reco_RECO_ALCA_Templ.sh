@@ -22,13 +22,9 @@ cmsRun UndergroundCosmicSPLooseMu_cfi_py_GEN_SIM_DIGI_L1_DIGI2RAW_RAW2DIGI_L1Rec
 
 echo "Content of working directory is: " `ls -lrt`
 
-eos mkdir -p /eos/cms/store/group/alca_trackeralign/$USER/test_out/CosmicsRun3MCProd/${year}/
+eos mkdir -p /eos/cms/store/group/alca_trackeralign/$USER/test_out/CosmicsRun3MCProduction/${year}/
 
-for payloadOutput in $(ls *root ); do xrdcp -f $payloadOutput root://eoscms.cern.ch//eos/cms/store/group/alca_trackeralign/$USER/test_out/CosmicsRun3MCProd/${year}/step1_UndergroundCosmicSPLooseMu_${globalTag}_${nEvts}_evts_seed_${mySeed}.root ; done
-
-mv ${JobName}.out ${CMSSW_DIR}/outfiles
-mv ${JobName}.err ${CMSSW_DIR}/outfiles
-mv ${JobName}.log ${CMSSW_DIR}/outfiles
+for payloadOutput in $(ls *root ); do xrdcp -f $payloadOutput root://eoscms.cern.ch//eos/cms/store/group/alca_trackeralign/$USER/test_out/CosmicsRun3MCProduction/${year}/step1_UndergroundCosmicSPLooseMu_${globalTag}_${nEvts}_evts_seed_${mySeed}.root ; done
 
 echo  "Job ended at " `date`
 

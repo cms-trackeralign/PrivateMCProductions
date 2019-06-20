@@ -59,7 +59,7 @@ process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
 process.load('Configuration.StandardSequences.GeometrySimDB_cff')
 process.load('Configuration.StandardSequences.MagneticField_cff')
 process.load('Configuration.StandardSequences.Generator_cff')
-process.load('IOMC.EventVertexGenerators.VtxSmearedRun3RoundOptics25ns13TeVHighSigmaZ_cfi')
+process.load('IOMC.EventVertexGenerators.VtxSmearedRun3RoundOptics25ns13TeVLowSigmaZ_cfi')
 process.load('GeneratorInterface.Core.genFilterSummary_cff')
 process.load('Configuration.StandardSequences.SimIdeal_cff')
 process.load('Configuration.StandardSequences.Digi_cff')
@@ -145,7 +145,7 @@ process.GlobalTag = GlobalTag(process.GlobalTag,options.GlobalTag, '')
 
 process.GlobalTag.toGet = cms.VPSet(
      cms.PSet(record = cms.string('BeamSpotObjectsRcd'),
-          tag = cms.string('BeamSpotObjects_Realistic25ns_13TeVCollisions_RoundOpticsHighSigmaZ_RunBased_v2_mc'),
+          tag = cms.string('BeamSpotObjects_Realistic25ns_13TeVCollisions_RoundOpticsLowSigmaZ_RunBased_v1_mc'),
           connect = cms.string("frontier://FrontierProd/CMS_CONDITIONS"),
           ),    
            cms.PSet(record = cms.string('SiPixelDynamicInefficiencyRcd'),
