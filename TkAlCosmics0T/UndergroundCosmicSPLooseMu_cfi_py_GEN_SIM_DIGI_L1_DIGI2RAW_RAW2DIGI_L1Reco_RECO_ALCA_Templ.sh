@@ -26,10 +26,6 @@ eos mkdir -p /eos/cms/store/group/alca_trackeralign/$USER/test_out/CosmicsRun3MC
 
 for payloadOutput in $(ls *root ); do xrdcp -f $payloadOutput root://eoscms.cern.ch//eos/cms/store/group/alca_trackeralign/$USER/test_out/CosmicsRun3MCProd/${year}/step1_UndergroundCosmicSPLooseMu_${globalTag}_${nEvts}_evts_seed_${mySeed}.root ; done
 
-mv ${JobName}.out ${CMSSW_DIR}/outfiles
-mv ${JobName}.err ${CMSSW_DIR}/outfiles
-mv ${JobName}.log ${CMSSW_DIR}/outfiles
-
 echo  "Job ended at " `date`
 
 exit 0
