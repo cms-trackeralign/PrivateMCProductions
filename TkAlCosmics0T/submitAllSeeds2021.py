@@ -18,7 +18,7 @@ content += "output                = %s/outfiles/step1_UndergroundCosmicSPLooseMu
 content += "error                 = %s/outfiles/step1_UndergroundCosmicSPLooseMu_%s_evts_$(ClusterId).$(ProcId).err\n"%(cmssw_base,str(eventsToSubmit))
 content += "log                   = %s/outfiles/step1_UndergroundCosmicSPLooseMu_%s_evts_$(ClusterId).$(ProcId).log\n"%(cmssw_base,str(eventsToSubmit))
 content += "transfer_output_files = \"\" \n"
-content += "+JobFlavour = 'workday'  \n"
+content += "+JobFlavour = \"workday\"  \n"
 content += "Queue Arguments from (\n"
 content += "%s" %arg_string
 content += ")"
